@@ -8,5 +8,5 @@ document.querySelector("form").addEventListener("submit", function (event) {
     setTimeout(() => {
         console.log("BetterIndy: Redirecting to calendar");
         window.location.href = "https://indy.sz-ybbs.ac.at/indy-calendar";
-    }, 0)
+    }, 500)
 })
