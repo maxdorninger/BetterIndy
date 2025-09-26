@@ -1,0 +1,30 @@
+{
+  "name": "BetterIndy",
+  "description": "Base Level Extension",
+  "version": "2025.9",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/login.js"],
+      "matches": [
+        "https://indy.sz-ybbs.ac.at/login"
+      ]
+    },
+    {
+      "js": ["scripts/calendar.js"],
+      "matches": [
+        "https://indy.sz-ybbs.ac.at/indy-calendar"
+      ]
+    }
+  ],
+  "permissions": [
+    "https://indy.sz-ybbs.ac.at/*"
+  ],
+  "host_permissions": [
+    "https://indy.sz-ybbs.ac.at/*"
+  ]
+}
